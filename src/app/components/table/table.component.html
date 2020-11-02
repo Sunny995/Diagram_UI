@@ -1,0 +1,32 @@
+<table *ngIf="data.length > 0">
+    <thead>
+ 
+       <tr>
+          <th >District</th>
+          <th [ngClass]="'table_header_name'">Confirmed</th>
+          <th [ngClass]="'table_header_entities'">Deceased</th>
+          <th [ngClass]="'table_header_actions'">Recovered</th>
+          <th [ngClass]="'table_header_button_column'">Tested</th>
+       </tr>
+    </thead>
+    <tbody>
+       <tr [ngClass]="'table_row'" [ngClass]="'table_row'" *ngFor="let l of data">
+          <td [ngClass]="'table_column_date'">
+             <b >{{l.name}}</b>
+          </td>
+          <td [ngClass]="'table_column_name'">
+             {{l.confirmed}}
+          </td>
+          <td [ngClass]="'table_column_entities'">{{l.deceased}}</td>
+          <td>
+            {{l.recovered}}
+          </td>
+          <td>{{l.tested}}</td>
+       </tr>
+    </tbody>
+ </table>
+ 
+ <div [ngClass]="'no_state'" *ngIf="data.length === 0">
+
+    <b>"Please Select State"</b>
+ </div>

@@ -1,0 +1,15 @@
+/* .details_sidebar{
+    display: flex;
+    flex-direction: column;
+} */
+.name_logo{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.conten_toggle_div{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}

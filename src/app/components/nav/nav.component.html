@@ -1,0 +1,17 @@
+<div [ngClass]="'details_sidebar'">
+    <div >
+        <span [ngClass]="'name_logo'"><b>BuddhiMed</b></span>
+    </div>
+    <button [ngClass]="'conten_toggle_div'" mat-raised-button color="primary" (click)="showDiagram()">Diagram</button>
+    <button [ngClass]="'conten_toggle_div'" mat-raised-button color="primary" (click)="showDashboard()">Dashboard</button>
+    <button [ngClass]="'conten_toggle_div'" mat-raised-button color="primary" (click)="showTable()">Table</button>
+
+    <mat-form-field appearance="fill">
+  <mat-label>Select State</mat-label>
+  <mat-select (selectionChange)="doSomething($event.value)">
+    <mat-option *ngFor="let state of list" [value]="state.code">
+      {{state.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+ </div>

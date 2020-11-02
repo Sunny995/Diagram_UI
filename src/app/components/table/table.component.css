@@ -1,0 +1,108 @@
+.details_sidebar {
+    width:20%;
+    min-height: 645px;
+    float: right;
+    height: 750px;
+    overflow-y: auto;
+ }
+ 
+ .details_sidebar_top {
+     margin-left: 20px;
+     margin-top: 20px;
+     background-color: lightgrey;
+     padding: 10px;
+ }
+ 
+ 
+ table {
+     font-family: arial, sans-serif;
+     border-collapse: collapse;
+     float:left;
+     display: block;
+     width:100%;
+     height: 750px;
+     overflow-y: auto;
+     border-right: 1px solid black;
+ }
+   
+ 
+ th, td {
+     border-bottom: 1px solid #ddd;
+     padding:15px;
+ }
+   
+ .table_row i {
+     padding-right: 15px;
+     padding-left: 15px;
+     filter: opacity(0.2);
+ }
+ 
+ .table_row:hover {
+     background-color: lightgrey;
+ }
+ 
+ th {
+     color: grey;
+ }
+ 
+ .table_row {
+     font-size: 20px;
+ }
+ 
+ .table_row button {
+    font-size: 14px;
+    background-color: white;
+    border: none;
+ }
+ 
+ .table_row:hover button {
+     color: rgb(68, 68, 253);
+     border-bottom: 4px solid blue;
+ }
+  
+ .table_header_button_column {
+     width: 100px;
+ }
+ 
+ .table_column_date {
+     text-align: center;
+     width: 70px;
+     color:lightslategray;
+     font-size: 15px;
+ }
+ 
+ .table_header_name {
+     text-align: left;
+ }
+ 
+ .table_header_actions {
+     text-align: left;
+     width:220px;
+ }
+ 
+ .table_header_entities {
+     text-align: right;
+     width:120px;
+ }
+ 
+ .table_column_entities {
+     text-align: right;
+     font-size: 15px;
+ }
+ 
+ .table_column_name {
+     text-align: left;
+     width:510px;
+ }
+ 
+ .table_row:hover i {
+     filter: opacity(1);
+ }
+ 
+ div b {
+     color: rgb(56, 56, 199);
+ }
+ 
+ .no_state{
+     text-align: center;
+ }
